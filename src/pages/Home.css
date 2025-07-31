@@ -1,0 +1,260 @@
+/* src/pages/Home.css */
+
+/* General Styling for All Sections */
+.hero-section, .featured-products, .factory-visit {
+  padding: 50px 20px;
+}
+
+/* Hero Section */
+.hero-section {
+  background-color: #f8f9fa;
+  text-align: center;
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero-section p {
+  font-size: 1.25rem;
+  margin-bottom: 30px;
+}
+
+/* Featured Products Section */
+.featured-products {
+  text-align: center;
+}
+
+.featured-products .card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.featured-products .card img {
+  width: 100%;
+  height: 200px; /* Fixed height for product images */
+  object-fit: cover;
+}
+
+.featured-products .card-body {
+  flex: 1;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.featured-products .card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.featured-products .card-text {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.featured-products .btn {
+  margin-top: auto;
+  width: 100%;
+}
+
+/* Responsive Layout: Grid for Product Cards */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.col-md-4 {
+  flex: 1 1 calc(33.333% - 20px);
+  max-width: calc(33.333% - 20px);
+  min-width: 280px; /* Minimum column width */
+}
+
+  /* Factory Visit Section */
+.factory-visit {
+  background-color: #f8f9fa;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.factory-visit h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.factory-visit p {
+  font-size: 1.25rem;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+.factory-visit .factory-images {
+  display: flex;
+  justify-content: center;
+  gap: 20px;  /* Provides consistent padding between the images */
+  flex-wrap: wrap; /* Ensures the images wrap on smaller screens */
+  margin-bottom: 30px;
+}
+
+.factory-visit .factory-images img {
+  width: 100%;
+  max-width: 600px; /* Ensures the images don't stretch beyond 600px */
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds shadow for a professional look */
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Hover effect for factory images */
+.factory-visit .factory-images img:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.factory-visit .btn {
+  padding: 12px 30px;
+  font-size: 1rem;
+  margin-top: 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for the button */
+.factory-visit .btn:hover {
+  background-color: #218838;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Small Devices (Phones) */
+@media (max-width: 576px) {
+  .factory-visit h2 {
+    font-size: 1.75rem;
+  }
+
+  .factory-visit p {
+    font-size: 1rem;
+  }
+
+  .factory-visit .factory-images {
+    gap: 10px; /* Smaller gap between images on mobile */
+    flex-direction: column; /* Stack the images vertically */
+  }
+
+  .factory-visit .btn {
+    font-size: 0.875rem;
+    padding: 10px 20px;
+  }
+}
+
+/* Medium Devices (Tablets) */
+@media (max-width: 768px) {
+  .factory-visit h2 {
+    font-size: 2rem;
+  }
+
+  .factory-visit p {
+    font-size: 1.125rem;
+  }
+
+  .factory-visit .factory-images {
+    gap: 15px; /* Adjust gap for tablets */
+  }
+
+  .factory-visit .btn {
+    padding: 10px 25px;
+  }
+}
+
+/* Large Devices (Desktops) */
+@media (min-width: 992px) {
+  .factory-visit h2 {
+    font-size: 2.5rem;
+  }
+
+  .factory-visit p {
+    font-size: 1.25rem;
+  }
+
+  .factory-visit .factory-images {
+    gap: 20px; /* Adjust the gap for larger screens */
+  }
+}
+
+/* Contact Information Section */
+/* Ensure the Contact Information section spans the full width of the page */
+.contact-info {
+  background-color: #343a40;  /* Dark gray background */
+  padding: 50px 20px;
+  color: white;
+  width: 100%;  /* Ensure it covers the entire width of the page */
+}
+
+.contact-info h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #f8f9fa;  /* Light color for the header */
+  font-weight: bold;
+}
+
+.contact-card {
+  background-color: #495057;  /* Slightly lighter gray for cards */
+  padding: 20px;
+  border: 1px solid #6c757d;  /* Subtle border for cards */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.contact-card h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #f8f9fa;  /* Light color for card titles */
+}
+
+.contact-card p {
+  font-size: 1rem;
+  color: #e9ecef;  /* Light color for text inside cards */
+}
+
+.contact-card:hover {
+  background-color: #6c757d; /* Slightly lighter gray on hover */
+  cursor: pointer;
+}
+
+/* Responsive Layout */
+@media (max-width: 576px) {
+  .contact-info h2 {
+    font-size: 2rem;
+  }
+
+  .contact-card h3 {
+    font-size: 1.25rem;
+  }
+
+  .contact-card p {
+    font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-info h2 {
+    font-size: 2.25rem;
+  }
+
+  .contact-card h3 {
+    font-size: 1.375rem;
+  }
+}

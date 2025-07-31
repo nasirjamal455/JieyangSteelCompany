@@ -1,0 +1,170 @@
+/* src/pages/About.css */
+
+/* General Container */
+.about-container {
+  padding: 30px;
+}
+
+/* Hero Section */
+.hero-section {
+  background-color: #343a40;
+  color: white;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.hero-section p {
+  font-size: 1.25rem;
+}
+
+/* Mission Section */
+.mission-section {
+  background-color: #f8f9fa;
+  padding: 50px 20px;
+  color: #333;
+  text-align: center;
+}
+
+.mission-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.mission-section p {
+  font-size: 1.25rem;
+}
+
+/* History Section */
+.history-section {
+  padding: 50px 20px;
+}
+
+.history-section h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.history-section .row {
+  margin-top: 20px;
+}
+
+.history-section .col-md-6 p {
+  font-size: 1.125rem;
+  color: #555;
+}
+
+/* Core Values Section */
+.core-values-section {
+  background-color: #f1f3f5;
+  padding: 50px 20px;
+  color: #333;
+  text-align: center;
+}
+
+.core-values-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.value-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.value-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.value-card p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Team Section */
+.team-section {
+  padding: 50px 20px;
+}
+
+.team-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.team-card {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.team-card img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.team-card h5 {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.team-card p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* CTA Section */
+.cta-section {
+  background-color: #28a745;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.cta-section p {
+  font-size: 1.25rem;
+}
+
+.cta-section a {
+  color: white;
+  font-weight: bold;
+}
+
+.cta-section a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .hero-section h1 {
+    font-size: 2.5rem;
+  }
+
+  .mission-section h2,
+  .core-values-section h2,
+  .team-section h2 {
+    font-size: 2rem;
+  }
+
+  .mission-section p,
+  .team-card h5 {
+    font-size: 1.125rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .team-card img {
+    width: 150px;
+    height: 150px;
+  }
+}
