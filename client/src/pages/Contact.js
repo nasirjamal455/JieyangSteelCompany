@@ -1,5 +1,6 @@
 // src/pages/Contact.js
 import React, { useState } from 'react';
+import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from 'react-icons/fa'
 import './Contact.css';  // Custom CSS for the Contact page styling
 
 const Contact = () => {
@@ -31,16 +32,19 @@ const Contact = () => {
           <h2>Contact Information</h2>
           <div className="row">
             <div className="col-md-4">
+              <FaEnvelope/>
               <h4>Email</h4>
-              <p>info@steelcompany.com</p>
+              <p>rongshengjames@gmail.com</p>
             </div>
             <div className="col-md-4">
+              <FaPhoneAlt/>
               <h4>Phone</h4>
-              <p>+123 456 789</p>
+              <p>+8613302117758</p>
             </div>
             <div className="col-md-4">
+              <FaMapMarkerAlt/>
               <h4>Address</h4>
-              <p>123 Steel St, Industrial City, Country</p>
+              <p>11-1-5 Dongfang Commercial Street, Jinghai District Tianjin China, Tianjin, China</p>
             </div>
           </div>
         </div>

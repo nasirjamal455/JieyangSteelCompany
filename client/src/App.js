@@ -10,6 +10,8 @@ import ProductDetails from './pages/ProductDetails';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import CarouselComponent from './components/Carousel';
 import './App.css';
+import Certificates from './pages/Certificates';
+import Footer from './components/Footer';
 
 
 const AppContent = () => {
@@ -25,10 +27,12 @@ const AppContent = () => {
           <Route path="/" element={<Home />} />
           <Route path="/products" element={<Products />} />
           <Route path="/about" element={<About />} />
+          <Route path="/certificates" element={<Certificates />} />
           <Route path="/contact" element={<Contact />} />
           <Route path='/product/:id' element={<ProductDetails />} />
         </Routes>
       </div>
+      <Footer/>
     </>
   );
 };
