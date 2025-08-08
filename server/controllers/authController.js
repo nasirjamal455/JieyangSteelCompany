@@ -6,7 +6,6 @@ import User from '../models/User.js';
 // Register a new user
 export const registerUser = async (req, res) => {
   const { email, password } = req.body;
-
   try {
     // Check if user already exists
     let user = await User.findOne({ email });
@@ -47,6 +46,7 @@ export const loginUser = async (req, res) => {
 
     // Compare passwords
     const isMatch = await bcrypt.compare(password, user.password);
+    console.log("match password", isMatch)
     if (!isMatch) {
       return res.status(400).json({ message: 'Invalid credentials' });
     }

@@ -31,7 +31,7 @@ const Navbar = () => {
     </div>
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <div className="container-fluid">
-        <Link className="navbar-brand" to="/"><img src={logo}  width="70" height="70" 
+        <Link className="navbar-brand" to="/"><img src={logo} className='rounded-circle' width="80" height="80" 
                      alt="Logo"/></Link>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
@@ -40,7 +40,7 @@ const Navbar = () => {
           <ul className="navbar-nav">
             <li className="nav-item">
               <Link className="nav-link text text-secondary" to="/">Home</Link>
-            </li>
+            </li>       
             <li className="nav-item">
               <Link className="nav-link text-secondary" to="/products">Products</Link>
             </li>

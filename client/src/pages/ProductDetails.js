@@ -5,7 +5,7 @@ import './ProductDetails.css'
 
 
 const ProductDetails = () => {
-  const { id } = useParams();  // Get the product ID from the URL
+  // const { id } = useParams();  // Get the product ID from the URL
   const location = useLocation();
   const product = {
     id: location.state.productId,

@@ -28,6 +28,53 @@
   font-size: 1.125rem;
   color: #555;
 }
+/* src/pages/Contact.css */
+
+/* QR Codes Section */
+.qr-codes {
+  padding: 50px 20px;
+  background-color: #f1f3f5;
+}
+
+.qr-codes h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #343a40;
+}
+
+.qr-item {
+  margin-bottom: 30px;
+}
+
+.qr-item h4 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.qr-image {
+  width: 100%;
+  max-width: 200px; /* Ensures the image is not too large */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Ensure responsiveness */
+@media (max-width: 768px) {
+  .qr-codes h2 {
+    font-size: 2rem;
+  }
+
+  .qr-item h4 {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .qr-item h4 {
+    font-size: 1rem;
+  }
+}
+
 
 /* Contact Form Section */
 .contact-form {
